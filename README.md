@@ -2,30 +2,30 @@
 
 Test cases
 
-Select
-Get
-http://localhost:8080/db/select
+Select: http://localhost:8080/db/select
+HTTP Get
 
-Insert
-POST
-    {
+
+Insert: http://localhost:8080/db/insert
+HTTP POST
+Body:
+   {
         "name": "admin1",
         "email": "admin1@email.com",
         "age": 30
     }
 
-http://localhost:8080/db/insert
 
-Update
-PUT
+Update: http://localhost:8080/db/update
+HTTP PUT
+Body:
     {
         "name": "admin",
         "email": "jun.lan@email.com",
         "age": 31
     }
-http://localhost:8080/db/update
 
 
-Delete
-DELETE
-http://localhost:8080/db/delete/admin1
+Delete: http://localhost:8080/db/delete/admin1
+HTTP DELETE
+
